@@ -96,7 +96,16 @@ namespace WebBrowser.UI
 
         private void goButton_Click(object sender, EventArgs e)
         {
-            webBrowser1.Navigate(new Uri(addressTextBox.Text));
+            string url = addressTextBox.Text;
+            try
+            {
+                webBrowser1.Navigate(new Uri(url));
+            }
+            catch
+            {
+                webBrowser1.Navigate(new Uri("http://" + url));
+                addressTextBox.Text = "http://" + url;
+            }
         }
 
         private void bookmarkButton_Click(object sender, EventArgs e)
@@ -115,11 +124,21 @@ namespace WebBrowser.UI
         }
 
         // when user presses enter, browser will navigate
+        // TODO: create separate method for navigating to address
         private void addressTextBox_KeyDown(object sender, KeyEventArgs e)
         {
+            
             if (e.KeyCode == Keys.Enter)
             {
-                webBrowser1.Navigate(new Uri(addressTextBox.Text));
+                string url = addressTextBox.Text; 
+                try
+                {
+                    webBrowser1.Navigate(new Uri(url));
+                } catch
+                {
+                    webBrowser1.Navigate(new Uri("http://" + url));
+                    addressTextBox.Text = "http://" + url; 
+                }
             }
 
         }
