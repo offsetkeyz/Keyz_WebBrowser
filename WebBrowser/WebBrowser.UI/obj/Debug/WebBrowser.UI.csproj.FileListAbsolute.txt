@@ -10,4 +10,4 @@ C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserP
 C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csproj.CopyComplete
 C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.exe
 C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.pdb
-C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.Form1.resources
+C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.BrowserForm.resources
