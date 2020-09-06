@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBrowser.UI", "WebBrowser.UI\WebBrowser.UI.csproj", "{BB083816-4FBA-4FFF-9BCE-F42D516DEC31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBrowser.Logic", "WebBrowser.Logic\WebBrowser.Logic.csproj", "{04430161-F9F3-4901-AD79-D5FBF49F3692}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBrowser.Data", "WebBrowser.Data\WebBrowser.Data.csproj", "{B23DF321-E228-4ABF-8E75-FC3A7DDF4311}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BB083816-4FBA-4FFF-9BCE-F42D516DEC31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB083816-4FBA-4FFF-9BCE-F42D516DEC31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB083816-4FBA-4FFF-9BCE-F42D516DEC31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB083816-4FBA-4FFF-9BCE-F42D516DEC31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04430161-F9F3-4901-AD79-D5FBF49F3692}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04430161-F9F3-4901-AD79-D5FBF49F3692}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04430161-F9F3-4901-AD79-D5FBF49F3692}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04430161-F9F3-4901-AD79-D5FBF49F3692}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B23DF321-E228-4ABF-8E75-FC3A7DDF4311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B23DF321-E228-4ABF-8E75-FC3A7DDF4311}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B23DF321-E228-4ABF-8E75-FC3A7DDF4311}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B23DF321-E228-4ABF-8E75-FC3A7DDF4311}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

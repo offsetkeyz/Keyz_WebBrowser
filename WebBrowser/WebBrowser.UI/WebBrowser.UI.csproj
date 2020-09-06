@@ -76,5 +76,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WebBrowser.Logic\WebBrowser.Logic.csproj">
+      <Project>{04430161-f9f3-4901-ad79-d5fbf49f3692}</Project>
+      <Name>WebBrowser.Logic</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
