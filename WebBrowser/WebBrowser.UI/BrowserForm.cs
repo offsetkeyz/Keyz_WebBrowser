@@ -114,8 +114,13 @@ namespace WebBrowser.UI
 
         }
 
+        // when user presses enter, browser will navigate
         private void addressTextBox_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Enter)
+            {
+                webBrowser1.Navigate(new Uri(addressTextBox.Text));
+            }
 
         }
     }
