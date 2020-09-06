@@ -96,7 +96,7 @@ namespace WebBrowser.UI
 
         private void goButton_Click(object sender, EventArgs e)
         {
-
+            webBrowser1.Navigate(new Uri(addressTextBox.Text));
         }
 
         private void bookmarkButton_Click(object sender, EventArgs e)
