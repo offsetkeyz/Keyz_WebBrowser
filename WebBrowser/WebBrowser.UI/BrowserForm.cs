@@ -18,7 +18,7 @@ namespace WebBrowser.UI
         }
 
         /************************************************************
-         * ********************* Tool Strip *************************
+         *********************** Menu Strip *************************
          ************************************************************/
         // File Options
         private void newTabToolStrip_Click(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace WebBrowser.UI
 
         private void exitBrowserToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            this.Close(); 
         }
 
         // Tools
@@ -59,6 +59,59 @@ namespace WebBrowser.UI
 
         // Help
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        /************************************************************
+         *********************** Tool Strip *************************
+         ************************************************************/
+        private void backButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void forwardButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void refreshButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addressTextBox_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void goButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bookmarkButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+
+        }
+
+        private void addressTextBox_KeyDown(object sender, KeyEventArgs e)
         {
 
         }
