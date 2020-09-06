@@ -60,7 +60,10 @@ namespace WebBrowser.UI
         // Help
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            string message = "This browser was created by Colin McAllister for use in Auburn " +
+                "University's Software Construction Class. Email CZM0135@auburn.edu " +
+                "with any questions. Copyright 2020.";
+            MessageBox.Show(message);
         }
 
         /************************************************************
