@@ -16,5 +16,10 @@ namespace WebBrowser.UI
         {
             InitializeComponent();
         }
+
+        private void newTabUserControl_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
