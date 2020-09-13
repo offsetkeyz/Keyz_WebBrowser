@@ -36,6 +36,10 @@ namespace WebBrowser.UI
             this.tabControl1.TabPages.Add(newTabPage); 
         }
 
+        /** 
+         * CTRL + T opens new tab
+         * CTRL + W closes current tab
+         */
         protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
         {
             if (keyData == (Keys.Control | Keys.T))
@@ -47,13 +51,18 @@ namespace WebBrowser.UI
                 newTabPage.Controls.Add(newUserControl);
                 this.tabControl1.TabPages.Add(newTabPage);
             }
-            return base.ProcessCmdKey(ref msg, keyData);
+
+            if (keyData == (Keys.Control | Keys.W))
+            {
+                tabControl1.SelectedTab.Dispose(); 
+            }
+
+                return base.ProcessCmdKey(ref msg, keyData);
         }
 
         private void closeCurrentTabToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TabPage currentTab = tabControl1.SelectedTab;
-            currentTab.Dispose();  
+            tabControl1.SelectedTab.Dispose(); 
         }
 
         private void savePageAsHTMLToolStripMenuItem_Click(object sender, EventArgs e)
