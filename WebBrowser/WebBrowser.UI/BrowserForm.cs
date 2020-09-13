@@ -38,7 +38,8 @@ namespace WebBrowser.UI
 
         private void closeCurrentTabToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            TabPage currentTab = tabControl1.SelectedTab;
+            currentTab.Dispose();  
         }
 
         private void savePageAsHTMLToolStripMenuItem_Click(object sender, EventArgs e)
