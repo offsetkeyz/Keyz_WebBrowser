@@ -45,7 +45,15 @@ namespace WebBrowser.UI
 
         public void forwardButton_Click(object sender, EventArgs e)
         {
+            backLinks.Push(addressTextBox.Text); 
+            try
+            {
+                string forwardURL = forwardLinks.Pop();
+                webBrowser1.Navigate(forwardURL); 
+            } catch
+            {
 
+            }
         }
 
         public void refreshButton_Click(object sender, EventArgs e)
