@@ -18,8 +18,7 @@ namespace WebBrowser.UI
 
         public TabUserControl()
         {
-            InitializeComponent();          
-
+            InitializeComponent();  
         }
 
         public void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)

@@ -49,15 +49,17 @@ namespace WebBrowser.UI
                 TabUserControl newUserControl = new TabUserControl();
                 newUserControl.Dock = DockStyle.Fill;
                 newTabPage.Controls.Add(newUserControl);
-                this.tabControl1.TabPages.Add(newTabPage);
+                tabControl1.TabPages.Add(newTabPage);
+                return true; 
             }
 
             if (keyData == (Keys.Control | Keys.W))
             {
-                tabControl1.SelectedTab.Dispose(); 
-            }
-
+                tabControl1.TabPages.Remove(tabControl1.SelectedTab);
                 return base.ProcessCmdKey(ref msg, keyData);
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
+
         }
 
         private void closeCurrentTabToolStripMenuItem_Click(object sender, EventArgs e)
