@@ -17,6 +17,11 @@ namespace WebBrowser.UI
             InitializeComponent();
         }
 
+        public void BrowserForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
         /************************************************************
          *********************** Menu Strip *************************
          ************************************************************/
@@ -66,81 +71,9 @@ namespace WebBrowser.UI
             MessageBox.Show(message);
         }
 
-        /************************************************************
-         *********************** Tool Strip *************************
-         ************************************************************/
-        private void backButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void forwardButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void refreshButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void homeButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void addressTextBox_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void goButton_Click(object sender, EventArgs e)
-        {
-            string url = addressTextBox.Text;
-            try
-            {
-                webBrowser1.Navigate(new Uri(url));
-            }
-            catch
-            {
-                webBrowser1.Navigate(new Uri("http://" + url));
-                addressTextBox.Text = "http://" + url;
-            }
-        }
-
-        private void bookmarkButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabPage1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-
-        }
-
-        // when user presses enter, browser will navigate
-        // TODO: create separate method for navigating to address
-        private void addressTextBox_KeyDown(object sender, KeyEventArgs e)
+        private void tabUserControl1_Load(object sender, EventArgs e)
         {
             
-            if (e.KeyCode == Keys.Enter)
-            {
-                string url = addressTextBox.Text; 
-                try
-                {
-                    webBrowser1.Navigate(new Uri(url));
-                } catch
-                {
-                    webBrowser1.Navigate(new Uri("http://" + url));
-                    addressTextBox.Text = "http://" + url; 
-                }
-            }
-
         }
     }
 }
