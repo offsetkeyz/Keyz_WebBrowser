@@ -29,11 +29,25 @@ namespace WebBrowser.UI
         private void newTabToolStrip_Click(object sender, EventArgs e)
         {
             TabPage newTabPage = new TabPage();
-            newTabPage.Text = "New Tab2";
+            newTabPage.Text = "New Tab";
             TabUserControl newUserControl = new TabUserControl();
             newUserControl.Dock = DockStyle.Fill; 
             newTabPage.Controls.Add(newUserControl); 
             this.tabControl1.TabPages.Add(newTabPage); 
+        }
+
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            if (keyData == (Keys.Control | Keys.T))
+            {
+                TabPage newTabPage = new TabPage();
+                newTabPage.Text = "New Tab";
+                TabUserControl newUserControl = new TabUserControl();
+                newUserControl.Dock = DockStyle.Fill;
+                newTabPage.Controls.Add(newUserControl);
+                this.tabControl1.TabPages.Add(newTabPage);
+            }
+            return base.ProcessCmdKey(ref msg, keyData);
         }
 
         private void closeCurrentTabToolStripMenuItem_Click(object sender, EventArgs e)

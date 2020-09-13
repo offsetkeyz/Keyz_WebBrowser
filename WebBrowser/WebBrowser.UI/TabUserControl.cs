@@ -89,13 +89,12 @@ namespace WebBrowser.UI
         {
 
         }
-
+       
 
         // when user presses enter, browser will navigate
         // TODO: create separate method for navigating to address
         public void addressTextBox_KeyDown(object sender, KeyEventArgs e)
         {
-
             if (e.KeyCode == Keys.Enter)
             {
                 string url = addressTextBox.Text;
