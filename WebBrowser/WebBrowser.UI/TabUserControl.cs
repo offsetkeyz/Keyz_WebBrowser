@@ -41,7 +41,7 @@ namespace WebBrowser.UI
 
         public void refreshButton_Click(object sender, EventArgs e)
         {
-            
+            webBrowser1.Refresh(); 
         }
 
         public void homeButton_Click(object sender, EventArgs e)
