@@ -13,17 +13,18 @@ namespace WebBrowser.UI
 {
     public partial class TabUserControl : UserControl
     {
+        Stack<string> backLinks = new Stack<string>();
+        Stack<string> forwardLinks = new Stack<string>();
+
         public TabUserControl()
         {
-            InitializeComponent();
-            Stack<string> backLinks = new Stack<string>();
-            Stack<string> forwardLinks = new Stack<string>();
+            InitializeComponent();          
 
         }
 
         public void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
-
+            addressTextBox.Text = webBrowser1.Url.ToString();
         }
 
         /************************************************************
@@ -31,7 +32,15 @@ namespace WebBrowser.UI
         ************************************************************/
         public void backButton_Click(object sender, EventArgs e)
         {
+            forwardLinks.Push(addressTextBox.Text);
+            try
+            {
+                string backURL = backLinks.Pop();
+                webBrowser1.Navigate(backURL);
+            } catch
+            {
 
+            }
         }      
 
         public void forwardButton_Click(object sender, EventArgs e)
