@@ -58,8 +58,8 @@
             this.helpToolStripMenuItem});
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
-            this.menuStrip2.Padding = new System.Windows.Forms.Padding(11, 3, 0, 3);
-            this.menuStrip2.Size = new System.Drawing.Size(4410, 100);
+            this.menuStrip2.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
+            this.menuStrip2.Size = new System.Drawing.Size(1488, 33);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -72,41 +72,41 @@
             this.printPageToolStripMenuItem,
             this.exitBrowserToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(87, 94);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(54, 29);
             this.toolStripMenuItem1.Text = "File";
             // 
             // newTabToolStrip
             // 
             this.newTabToolStrip.Name = "newTabToolStrip";
-            this.newTabToolStrip.Size = new System.Drawing.Size(444, 54);
+            this.newTabToolStrip.Size = new System.Drawing.Size(270, 34);
             this.newTabToolStrip.Text = "New Tab";
             this.newTabToolStrip.Click += new System.EventHandler(this.newTabToolStrip_Click);
             // 
             // closeCurrentTabToolStripMenuItem
             // 
             this.closeCurrentTabToolStripMenuItem.Name = "closeCurrentTabToolStripMenuItem";
-            this.closeCurrentTabToolStripMenuItem.Size = new System.Drawing.Size(444, 54);
+            this.closeCurrentTabToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.closeCurrentTabToolStripMenuItem.Text = "Close Current Tab";
             this.closeCurrentTabToolStripMenuItem.Click += new System.EventHandler(this.closeCurrentTabToolStripMenuItem_Click);
             // 
             // savePageAsHTMLToolStripMenuItem
             // 
             this.savePageAsHTMLToolStripMenuItem.Name = "savePageAsHTMLToolStripMenuItem";
-            this.savePageAsHTMLToolStripMenuItem.Size = new System.Drawing.Size(444, 54);
+            this.savePageAsHTMLToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.savePageAsHTMLToolStripMenuItem.Text = "Save Page As HTML";
             this.savePageAsHTMLToolStripMenuItem.Click += new System.EventHandler(this.savePageAsHTMLToolStripMenuItem_Click);
             // 
             // printPageToolStripMenuItem
             // 
             this.printPageToolStripMenuItem.Name = "printPageToolStripMenuItem";
-            this.printPageToolStripMenuItem.Size = new System.Drawing.Size(444, 54);
+            this.printPageToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.printPageToolStripMenuItem.Text = "Print Page";
             this.printPageToolStripMenuItem.Click += new System.EventHandler(this.printPageToolStripMenuItem_Click);
             // 
             // exitBrowserToolStripMenuItem
             // 
             this.exitBrowserToolStripMenuItem.Name = "exitBrowserToolStripMenuItem";
-            this.exitBrowserToolStripMenuItem.Size = new System.Drawing.Size(444, 54);
+            this.exitBrowserToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.exitBrowserToolStripMenuItem.Text = "Exit Browser";
             this.exitBrowserToolStripMenuItem.Click += new System.EventHandler(this.exitBrowserToolStripMenuItem_Click);
             // 
@@ -116,20 +116,20 @@
             this.manageHistoryToolStripMenuItem,
             this.manageBookmarksToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(111, 94);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(69, 29);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // manageHistoryToolStripMenuItem
             // 
             this.manageHistoryToolStripMenuItem.Name = "manageHistoryToolStripMenuItem";
-            this.manageHistoryToolStripMenuItem.Size = new System.Drawing.Size(447, 54);
+            this.manageHistoryToolStripMenuItem.Size = new System.Drawing.Size(272, 34);
             this.manageHistoryToolStripMenuItem.Text = "Manage History";
             this.manageHistoryToolStripMenuItem.Click += new System.EventHandler(this.manageHistoryToolStripMenuItem_Click);
             // 
             // manageBookmarksToolStripMenuItem
             // 
             this.manageBookmarksToolStripMenuItem.Name = "manageBookmarksToolStripMenuItem";
-            this.manageBookmarksToolStripMenuItem.Size = new System.Drawing.Size(447, 54);
+            this.manageBookmarksToolStripMenuItem.Size = new System.Drawing.Size(272, 34);
             this.manageBookmarksToolStripMenuItem.Text = "Manage Bookmarks";
             this.manageBookmarksToolStripMenuItem.Click += new System.EventHandler(this.manageBookmarksToolStripMenuItem_Click);
             // 
@@ -138,13 +138,13 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(104, 94);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(65, 29);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(266, 54);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(164, 34);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -152,19 +152,21 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 167);
+            this.tabControl1.Location = new System.Drawing.Point(0, 33);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(4410, 2948);
+            this.tabControl1.Size = new System.Drawing.Size(1488, 1173);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.tabUserControl1);
-            this.tabPage1.Location = new System.Drawing.Point(10, 48);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(4390, 2890);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(1480, 1140);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -174,21 +176,19 @@
             this.tabUserControl1.AutoSize = true;
             this.tabUserControl1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.tabUserControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabUserControl1.Location = new System.Drawing.Point(3, 3);
-            this.tabUserControl1.Margin = new System.Windows.Forms.Padding(5);
+            this.tabUserControl1.Location = new System.Drawing.Point(2, 2);
             this.tabUserControl1.Name = "tabUserControl1";
-            this.tabUserControl1.Size = new System.Drawing.Size(4384, 2884);
+            this.tabUserControl1.Size = new System.Drawing.Size(1476, 1136);
             this.tabUserControl1.TabIndex = 0;
             this.tabUserControl1.Load += new System.EventHandler(this.tabUserControl1_Load);
             // 
             // BrowserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2646, 1869);
+            this.ClientSize = new System.Drawing.Size(1488, 1206);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip2);
-            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "BrowserForm";
             this.Load += new System.EventHandler(this.BrowserForm_Load);
             this.menuStrip2.ResumeLayout(false);

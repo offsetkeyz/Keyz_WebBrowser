@@ -28,7 +28,12 @@ namespace WebBrowser.UI
         // File Options
         private void newTabToolStrip_Click(object sender, EventArgs e)
         {
-
+            TabPage newTabPage = new TabPage();
+            newTabPage.Text = "New Tab2";
+            TabUserControl newUserControl = new TabUserControl();
+            newUserControl.Dock = DockStyle.Fill; 
+            newTabPage.Controls.Add(newUserControl); 
+            this.tabControl1.TabPages.Add(newTabPage); 
         }
 
         private void closeCurrentTabToolStripMenuItem_Click(object sender, EventArgs e)
