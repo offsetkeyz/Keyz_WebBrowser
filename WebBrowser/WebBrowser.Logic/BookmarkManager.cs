@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebBrowser.Data.Database1DataSetTableAdapters;
+using WebBrowser.Data.BookmarkDataSetTableAdapters;
 
 namespace WebBrowser.Logic
 {
-    class BookmarkManager
+    public class BookmarkManager
     {
         /**
          * Adds a Bookmark Item to the database
          */
-        public static void AddHistoryItem(BookmarkItem item)
+        public static void AddBookmarkItem(BookmarkItem item)
         {
             var adapter = new BookmarksTableAdapter();
             adapter.Insert(item.URL, item.Title);

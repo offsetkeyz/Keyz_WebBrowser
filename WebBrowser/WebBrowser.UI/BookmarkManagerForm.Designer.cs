@@ -40,6 +40,7 @@
             this.BookmarksListBox.Name = "BookmarksListBox";
             this.BookmarksListBox.Size = new System.Drawing.Size(800, 342);
             this.BookmarksListBox.TabIndex = 0;
+            this.BookmarksListBox.SelectedIndexChanged += new System.EventHandler(this.BookmarksListBox_SelectedIndexChanged);
             // 
             // BookmarksLabel
             // 
