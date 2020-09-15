@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WebBrowser.Data;
-using WebBrowser.Data.HistoryDataSetTableAdapters; 
+using WebBrowser.Data.BrowserDatasetTableAdapters; 
 
 namespace WebBrowser.Logic
 {
@@ -12,12 +12,13 @@ namespace WebBrowser.Logic
     {
         /**
          * Adds a HistoryItem to the database
-         */ 
+         */
         public static void AddHistoryItem(HistoryItem item)
         {
             DateTime currentDateTime = DateTime.Now;
             var adapter = new HistoryTableAdapter();
-            adapter.Insert(item.URL, item.Title, item.Date); 
+            adapter.Insert(item.URL, item.Title, item.Date);
+
         }
 
         /**
@@ -34,9 +35,10 @@ namespace WebBrowser.Logic
             {
                 var item = new HistoryItem(row.URL, row.Title, row.Date);
 
-                results.Add(item); 
+                results.Add(item);
             }
-            return results; 
+            return results;
         }
+
     }
 }

@@ -23,3 +23,11 @@ C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.csproj.CoreCompileInputs.cache
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.dll
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.pdb
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\Database1.mdf
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\Database1_log.ldf
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Logic.dll
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Logic.pdb
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Data.dll
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Data.pdb
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Data.dll.config
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.csproj.CopyComplete
