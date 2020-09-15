@@ -26,3 +26,5 @@ C:\Users\offse\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserP
 C:\Users\offse\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.exe
 C:\Users\offse\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.pdb
 C:\Users\offse\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.TabUserControl.resources
+C:\Users\offse\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\Database1.mdf
+C:\Users\offse\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\Database1_log.ldf

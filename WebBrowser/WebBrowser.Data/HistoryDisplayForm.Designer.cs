@@ -106,7 +106,7 @@
             this.bookmarksBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bookmarksBindingNavigator.Name = "bookmarksBindingNavigator";
             this.bookmarksBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.bookmarksBindingNavigator.Size = new System.Drawing.Size(858, 51);
+            this.bookmarksBindingNavigator.Size = new System.Drawing.Size(852, 51);
             this.bookmarksBindingNavigator.TabIndex = 0;
             this.bookmarksBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -218,7 +218,7 @@
             this.bookmarksDataGridView.Name = "bookmarksDataGridView";
             this.bookmarksDataGridView.RowHeadersWidth = 102;
             this.bookmarksDataGridView.RowTemplate.Height = 40;
-            this.bookmarksDataGridView.Size = new System.Drawing.Size(858, 1227);
+            this.bookmarksDataGridView.Size = new System.Drawing.Size(852, 481);
             this.bookmarksDataGridView.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
@@ -250,7 +250,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(858, 1278);
+            this.ClientSize = new System.Drawing.Size(852, 532);
             this.Controls.Add(this.bookmarksDataGridView);
             this.Controls.Add(this.bookmarksBindingNavigator);
             this.Name = "HistoryDisplayForm";
