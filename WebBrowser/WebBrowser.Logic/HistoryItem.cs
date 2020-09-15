@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace WebBrowser.Logic
 {
-    class HistoryItem
+    public class HistoryItem
     {
-        string URL;
-        string Title;
-        string Date; 
+        public string URL { get; set; }
+        public string Title { get; set; }
+        public DateTime Date { get; set; } 
+
+        public HistoryItem(string URLin, string TitleIn, DateTime DateIn)
+        {
+            this.URL = URLin;
+            this.Title = TitleIn;
+            this.Date = DateIn; 
+        }
     }
 }
