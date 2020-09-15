@@ -85,7 +85,8 @@ namespace WebBrowser.UI
         // Tools
         private void manageHistoryToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var histManagerForm = new HistoryManagerForm();
+            histManagerForm.ShowDialog(); 
         }
 
         private void manageBookmarksToolStripMenuItem_Click(object sender, EventArgs e)

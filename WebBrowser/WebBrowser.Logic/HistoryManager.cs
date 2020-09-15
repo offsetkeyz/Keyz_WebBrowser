@@ -29,8 +29,13 @@ namespace WebBrowser.Logic
             var adapter = new HistoryTableAdapter();
             var results = new List<HistoryItem>();
             var rows = adapter.GetData();
+            //System.Data.SqlClient.SqlException: 'An attempt to attach an auto-named database for 
+            //file C:\Users\offse\OneDrive - 
+            //Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\Database1.mdf 
+           // failed. A database with the same name exists, or specified file cannot be opened,
+            //or it is located on UNC share.'
 
-            foreach(var row in rows)
+            foreach (var row in rows)
             {
                 var item = new HistoryItem(row.URL, row.Title, row.Date);
 

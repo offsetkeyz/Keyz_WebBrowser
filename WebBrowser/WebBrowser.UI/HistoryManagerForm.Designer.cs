@@ -36,9 +36,9 @@
             // 
             this.HistoryListBox.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.HistoryListBox.FormattingEnabled = true;
-            this.HistoryListBox.Location = new System.Drawing.Point(0, 160);
+            this.HistoryListBox.Location = new System.Drawing.Point(0, 121);
             this.HistoryListBox.Name = "HistoryListBox";
-            this.HistoryListBox.Size = new System.Drawing.Size(800, 290);
+            this.HistoryListBox.Size = new System.Drawing.Size(800, 329);
             this.HistoryListBox.TabIndex = 0;
             this.HistoryListBox.SelectedIndexChanged += new System.EventHandler(this.HistoryListBox_SelectedIndexChanged);
             // 
