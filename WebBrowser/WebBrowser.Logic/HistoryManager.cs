@@ -16,5 +16,14 @@ namespace WebBrowser.Logic
             var adapter = new HistoryTableAdapter();
             adapter.Insert(item.URL, item.Title, item.Date); 
         }
+
+        public static List<HistoryItem> GetAllHistoryItems()
+        {
+            var adapter = new HistoryTableAdapter();
+            var results = new List<HistoryItem>();
+            var rows = adapter.GetData();
+
+            return results; 
+        }
     }
 }
