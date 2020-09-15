@@ -21,3 +21,12 @@ C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.pdb
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Data\bin\Debug\BrowserDatabase.mdf
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Data\bin\Debug\BrowserDatabase_log.ldf
+C:\Users\offse\OneDrive\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.Data\bin\Debug\BrowserDatabase.mdf
+C:\Users\offse\OneDrive\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.Data\bin\Debug\BrowserDatabase_log.ldf
+C:\Users\offse\OneDrive\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.Data\bin\Debug\WebBrowser.Data.dll.config
+C:\Users\offse\OneDrive\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.Data\bin\Debug\WebBrowser.Data.dll
+C:\Users\offse\OneDrive\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.Data\bin\Debug\WebBrowser.Data.pdb
+C:\Users\offse\OneDrive\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.csprojAssemblyReference.cache
+C:\Users\offse\OneDrive\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.csproj.CoreCompileInputs.cache
+C:\Users\offse\OneDrive\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.dll
+C:\Users\offse\OneDrive\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.pdb
