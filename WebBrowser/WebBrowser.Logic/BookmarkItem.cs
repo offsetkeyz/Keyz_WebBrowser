@@ -8,7 +8,16 @@ namespace WebBrowser.Logic
 {
     class BookmarkItem
     {
-        string URL;
-        string Title; 
+        public string URL { get; set; }
+        public string Title { get; set; }
+
+        /**
+         * Constructor for Bookmark Item
+         */
+        public BookmarkItem(string URLin, string TitleIn)
+        {
+            this.URL = URLin;
+            this.Title = TitleIn; 
+        }
     }
 }
