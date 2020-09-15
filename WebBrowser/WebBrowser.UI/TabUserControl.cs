@@ -28,6 +28,7 @@ namespace WebBrowser.UI
             // push current link to back button stack
             backLinks.Push(addressTextBox.Text);
             var newHistoryItem = new HistoryItem(webBrowser1.Url.ToString(), webBrowser1.DocumentTitle, DateTime.Now);
+            HistoryManager.AddHistoryItem(newHistoryItem); 
         }
 
         /************************************************************
@@ -100,6 +101,7 @@ namespace WebBrowser.UI
             } catch
             {
                 MessageBox.Show("Bookmark URL already exists");
+                
             }
         }
        

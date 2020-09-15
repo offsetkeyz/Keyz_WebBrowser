@@ -15,10 +15,8 @@ namespace WebBrowser.Logic
          */
         public static void AddHistoryItem(HistoryItem item)
         {
-            DateTime currentDateTime = DateTime.Now;
             var adapter = new HistoryTableAdapter();
-            adapter.Insert(item.URL, item.Title, item.Date);
-
+            adapter.Insert(item.URL, item.Title, item.Date); 
         }
 
         /**
