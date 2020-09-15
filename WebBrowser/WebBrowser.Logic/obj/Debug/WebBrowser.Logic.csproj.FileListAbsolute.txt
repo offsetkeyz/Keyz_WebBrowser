@@ -19,3 +19,7 @@ C:\Users\offse\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserP
 C:\Users\offse\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.csproj.CopyComplete
 C:\Users\offse\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.dll
 C:\Users\offse\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.pdb
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.csprojAssemblyReference.cache
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.csproj.CoreCompileInputs.cache
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.dll
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.pdb
