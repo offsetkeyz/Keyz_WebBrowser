@@ -74,7 +74,7 @@
             this.backButton.Image = global::WebBrowser.UI.Properties.Resources.iconmonstr_arrow_68_240;
             this.backButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.backButton.Name = "backButton";
-            this.backButton.Size = new System.Drawing.Size(58, 40);
+            this.backButton.Size = new System.Drawing.Size(58, 41);
             this.backButton.Text = "Back Button";
             this.backButton.Click += new System.EventHandler(this.backButton_Click);
             // 
@@ -84,7 +84,7 @@
             this.forwardButton.Image = global::WebBrowser.UI.Properties.Resources.iconmonstr_arrow_27_240;
             this.forwardButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.forwardButton.Name = "forwardButton";
-            this.forwardButton.Size = new System.Drawing.Size(58, 40);
+            this.forwardButton.Size = new System.Drawing.Size(58, 41);
             this.forwardButton.Text = "Forward Button";
             this.forwardButton.Click += new System.EventHandler(this.forwardButton_Click);
             // 
@@ -94,7 +94,7 @@
             this.refreshButton.Image = global::WebBrowser.UI.Properties.Resources.iconmonstr_refresh_1_240;
             this.refreshButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.refreshButton.Name = "refreshButton";
-            this.refreshButton.Size = new System.Drawing.Size(58, 40);
+            this.refreshButton.Size = new System.Drawing.Size(58, 41);
             this.refreshButton.Text = "Refresh";
             this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
             // 
@@ -104,16 +104,17 @@
             this.homeButton.Image = global::WebBrowser.UI.Properties.Resources.iconmonstr_home_6_240;
             this.homeButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.homeButton.Name = "homeButton";
-            this.homeButton.Size = new System.Drawing.Size(58, 40);
+            this.homeButton.Size = new System.Drawing.Size(58, 41);
             this.homeButton.Text = "Home";
             this.homeButton.Click += new System.EventHandler(this.homeButton_Click);
             // 
             // addressTextBox
             // 
             this.addressTextBox.AcceptsReturn = true;
+            this.addressTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.addressTextBox.Size = new System.Drawing.Size(500, 48);
+            this.addressTextBox.Size = new System.Drawing.Size(480, 48);
             this.addressTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.addressTextBox_KeyDown);
             this.addressTextBox.Click += new System.EventHandler(this.addressTextBox_Click);
             // 
@@ -123,7 +124,7 @@
             this.goButton.Image = global::WebBrowser.UI.Properties.Resources.iconmonstr_arrow_25_240;
             this.goButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.goButton.Name = "goButton";
-            this.goButton.Size = new System.Drawing.Size(58, 40);
+            this.goButton.Size = new System.Drawing.Size(58, 41);
             this.goButton.Text = "Go";
             this.goButton.Click += new System.EventHandler(this.goButton_Click_1);
             // 
@@ -133,7 +134,7 @@
             this.bookmarkButton.Image = global::WebBrowser.UI.Properties.Resources.iconmonstr_bookmark_1_240;
             this.bookmarkButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.bookmarkButton.Name = "bookmarkButton";
-            this.bookmarkButton.Size = new System.Drawing.Size(58, 40);
+            this.bookmarkButton.Size = new System.Drawing.Size(58, 41);
             this.bookmarkButton.Text = "Bookmark";
             this.bookmarkButton.Click += new System.EventHandler(this.bookmarkButton_Click);
             // 

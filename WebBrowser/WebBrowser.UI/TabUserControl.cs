@@ -49,8 +49,8 @@ namespace WebBrowser.UI
         public void forwardButton_Click(object sender, EventArgs e)
         {
             // TODO maybe delete \/
-            backLinks.Push(addressTextBox.Text); 
-            try
+/*            backLinks.Push(addressTextBox.Text); 
+*/            try
             {
                 string forwardURL = forwardLinks.Pop();
                 webBrowser1.Navigate(forwardURL); 
@@ -91,7 +91,16 @@ namespace WebBrowser.UI
 
         public void bookmarkButton_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                var newBookmarkItem = new BookmarkItem();
+                newBookmarkItem.URL = webBrowser1.Url.ToString();
+                newBookmarkItem.Title = webBrowser1.DocumentTitle; 
+                BookmarkManager.AddBookmarkItem(newBookmarkItem); 
+            } catch
+            {
+                MessageBox.Show("Bookmark URL already exists");
+            }
         }
        
 
