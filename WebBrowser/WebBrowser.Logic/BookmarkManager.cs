@@ -17,5 +17,24 @@ namespace WebBrowser.Logic
             var adapter = new BookmarksTableAdapter();
             adapter.Insert(item.URL, item.Title);
         }
+
+        /**
+         * Gets all Bookmark Items in the database.
+         * @return a list of all bookmark items
+         */
+        public static List<BookmarkItem> GetAllBookmarkItems()
+        {
+            var adapter = new BookmarksTableAdapter();
+            var results = new List<BookmarkItem>();
+            var rows = adapter.GetData();
+
+            foreach (var row in rows)
+            {
+                var item = new BookmarkItem(row.URL, row.Title);
+
+                results.Add(item);
+            }
+            return results;
+        }
     }
 }

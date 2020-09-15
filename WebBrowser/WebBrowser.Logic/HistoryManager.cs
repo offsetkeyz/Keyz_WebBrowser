@@ -36,7 +36,6 @@ namespace WebBrowser.Logic
 
                 results.Add(item); 
             }
-            // TODO paused video at 17:30
             return results; 
         }
     }
