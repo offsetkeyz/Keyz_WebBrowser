@@ -56,7 +56,7 @@ namespace WebBrowser.UI
             if (keyData == (Keys.Control | Keys.W))
             {
                 tabControl1.TabPages.Remove(tabControl1.SelectedTab);
-                return base.ProcessCmdKey(ref msg, keyData);
+                return true; 
             }
             return base.ProcessCmdKey(ref msg, keyData);
 
