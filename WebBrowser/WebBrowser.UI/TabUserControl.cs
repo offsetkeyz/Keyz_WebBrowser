@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Collections;
+using WebBrowser.Logic; 
 
 namespace WebBrowser.UI
 {
@@ -24,6 +25,9 @@ namespace WebBrowser.UI
         public void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
             addressTextBox.Text = webBrowser1.Url.ToString();
+            // push current link to back button stack
+            backLinks.Push(addressTextBox.Text);
+            var newHistoryItem = new HistoryItem(webBrowser1.Url.ToString(), webBrowser1.DocumentTitle, DateTime.Now);
         }
 
         /************************************************************
@@ -44,6 +48,7 @@ namespace WebBrowser.UI
 
         public void forwardButton_Click(object sender, EventArgs e)
         {
+            // TODO maybe delete \/
             backLinks.Push(addressTextBox.Text); 
             try
             {
