@@ -1266,7 +1266,7 @@ namespace WebBrowser.Data.BrowserDatasetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WebBrowser.Data.Properties.Settings.Default.Database1ConnectionString;
+            this._connection.ConnectionString = global::WebBrowser.Data.Properties.Settings.Default.BrowserDatabaseConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1623,7 +1623,7 @@ namespace WebBrowser.Data.BrowserDatasetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::WebBrowser.Data.Properties.Settings.Default.Database1ConnectionString;
+            this._connection.ConnectionString = global::WebBrowser.Data.Properties.Settings.Default.BrowserDatabaseConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

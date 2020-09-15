@@ -41,8 +41,6 @@ C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csproj.CoreCompileInputs.cache
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.exe
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.pdb
-C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\Database1.mdf
-C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\Database1_log.ldf
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.UI.exe.config
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.UI.exe
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.UI.pdb
@@ -52,3 +50,5 @@ C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Data.pdb
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Data.dll.config
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csproj.CopyComplete
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\BrowserDatabase.mdf
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\BrowserDatabase_log.ldf

@@ -33,5 +33,16 @@ namespace WebBrowser.Data.Properties {
                 return ((string)(this["Database1ConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\BrowserDataba" +
+            "se.mdf;Integrated Security=True")]
+        public string BrowserDatabaseConnectionString {
+            get {
+                return ((string)(this["BrowserDatabaseConnectionString"]));
+            }
+        }
     }
 }

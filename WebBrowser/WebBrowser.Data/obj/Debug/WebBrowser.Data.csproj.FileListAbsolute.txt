@@ -12,8 +12,6 @@ C:\Users\offse\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserP
 C:\Users\offse\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.csproj.CoreCompileInputs.cache
 C:\Users\offse\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.dll
 C:\Users\offse\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.pdb
-C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Data\bin\Debug\Database1.mdf
-C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Data\bin\Debug\Database1_log.ldf
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Data\bin\Debug\WebBrowser.Data.dll.config
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Data\bin\Debug\WebBrowser.Data.dll
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Data\bin\Debug\WebBrowser.Data.pdb
@@ -21,3 +19,5 @@ C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.csproj.CoreCompileInputs.cache
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.dll
 C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.pdb
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Data\bin\Debug\BrowserDatabase.mdf
+C:\Users\offse\OneDrive\Documents\GitHub\WebBrowserProject\WebBrowser\WebBrowser.Data\bin\Debug\BrowserDatabase_log.ldf
