@@ -31,6 +31,12 @@ namespace WebBrowser.UI
             HistoryManager.AddHistoryItem(newHistoryItem); 
         }
 
+        public void WebBrowser1_ProgressChanged(Object sender, WebBrowserProgressChangedEventArgs e)
+        {
+            toolStripProgressBar1.Maximum = (int)e.MaximumProgress;
+            toolStripProgressBar1.Value = (int)e.CurrentProgress; 
+        }
+
         /************************************************************
         *********************** Tool Strip *************************
         ************************************************************/
@@ -126,5 +132,9 @@ namespace WebBrowser.UI
 
         }
 
+        private void toolStripProgressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
