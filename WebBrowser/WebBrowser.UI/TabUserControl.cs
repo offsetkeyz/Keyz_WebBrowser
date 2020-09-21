@@ -19,7 +19,9 @@ namespace WebBrowser.UI
 
         public TabUserControl()
         {
-            InitializeComponent();  
+            InitializeComponent();
+            toolStripStatusLabel1.Text = "";
+
         }
 
         public void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
@@ -30,6 +32,19 @@ namespace WebBrowser.UI
             var newHistoryItem = new HistoryItem(webBrowser1.Url.ToString(), webBrowser1.DocumentTitle, DateTime.Now);
             HistoryManager.AddHistoryItem(newHistoryItem);
         }
+
+        private void webBrowser1_Navigated(object sender, WebBrowserNavigatedEventArgs e)
+        {
+            this.webBrowser1.Document.MouseOver += new HtmlElementEventHandler(this.Browser_Mouse_Moved); 
+        }
+
+        // mouse hover url
+        private void Browser_Mouse_Moved(object sender, HtmlElementEventArgs e)
+        {
+            string element = webBrowser1.Document.GetElementFromPoint(e.ClientMousePosition).GetAttribute("href");
+            toolStripStatusLabel1.Text = element;
+        }
+
 
         // Sets progress bar
         private void webBrowser1_ProgressChanged_1(object sender, WebBrowserProgressChangedEventArgs e)
@@ -150,5 +165,6 @@ namespace WebBrowser.UI
         {
 
         }
+
     }
 }
