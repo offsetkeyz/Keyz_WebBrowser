@@ -35,5 +35,29 @@ namespace WebBrowser.UI
                     item.Date, item.Title, item.URL)); 
             }
         }
+
+        private void HistorySearchButton_Click(object sender, EventArgs e)
+        {
+            if (!HistorySearchTextBox.Text.Trim().Equals(""))
+            {
+                var items = HistoryManager.GetAllHistoryItems();
+                HistoryListBox.Items.Clear();
+                string searchFor = HistorySearchTextBox.Text.Trim().ToLower();
+                foreach (var item in items)
+                {
+                    if (item.URL.Contains(searchFor) || item.Title.Contains(searchFor))
+                    {
+                        HistoryListBox.Items.Add(string.Format("[{0}] {1} ({2})",
+                            item.Date, item.Title, item.URL));
+                    }
+                }
+            }
+
+        }
+
+        private void HistorySearchTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -78,3 +78,5 @@ C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserP
 C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.BookmarkManagerForm.resources
 C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.HistoryManagerForm.resources
 C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.TabUserControl.resources
+C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\BrowserDatabase.mdf
+C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\BrowserDatabase_log.ldf
