@@ -26,7 +26,7 @@ namespace WebBrowser.UI
          *********************** Menu Strip *************************
          ************************************************************/
         // File Options
-        private void newTabToolStrip_Click(object sender, EventArgs e)
+        protected void newTabToolStrip_Click(object sender, EventArgs e)
         {
             TabPage newTabPage = new TabPage();
             newTabPage.Text = "New Tab";
@@ -104,7 +104,7 @@ namespace WebBrowser.UI
             MessageBox.Show(message);
         }
 
-        private void tabUserControl1_Load(object sender, EventArgs e)
+        protected void tabUserControl1_Load(object sender, EventArgs e)
         {
             
         }

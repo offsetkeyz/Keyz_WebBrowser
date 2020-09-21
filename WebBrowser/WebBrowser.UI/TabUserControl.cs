@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Collections;
-using WebBrowser.Logic; 
+using WebBrowser.Logic;
 
 namespace WebBrowser.UI
 {
@@ -21,11 +21,11 @@ namespace WebBrowser.UI
         {
             InitializeComponent();
             toolStripStatusLabel1.Text = "";
-
         }
 
         public void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
+            
             addressTextBox.Text = webBrowser1.Url.ToString();
             // push current link to back button stack
             backLinks.Push(addressTextBox.Text);
@@ -53,7 +53,7 @@ namespace WebBrowser.UI
             toolStripProgressBar1.Minimum = 0;
             toolStripProgressBar1.Maximum = (int)e.MaximumProgress; 
 
-            if((e.CurrentProgress > 0))
+            if((e.CurrentProgress > 0) && (e.CurrentProgress <= e.MaximumProgress))
             {
                 toolStripProgressBar1.Value = (int)e.CurrentProgress;
             }
@@ -166,5 +166,9 @@ namespace WebBrowser.UI
 
         }
 
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

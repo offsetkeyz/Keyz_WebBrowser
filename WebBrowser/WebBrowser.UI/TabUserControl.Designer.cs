@@ -75,6 +75,7 @@
             this.toolStrip1.Size = new System.Drawing.Size(576, 43);
             this.toolStrip1.TabIndex = 4;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // backButton
             // 
@@ -119,10 +120,11 @@
             // addressTextBox
             // 
             this.addressTextBox.AcceptsReturn = true;
-            this.addressTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.addressTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.addressTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.addressTextBox.Size = new System.Drawing.Size(229, 33);
+            this.addressTextBox.Size = new System.Drawing.Size(380, 33);
             this.addressTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.addressTextBox_KeyDown);
             this.addressTextBox.Click += new System.EventHandler(this.addressTextBox_Click);
             // 
