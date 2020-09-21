@@ -43,3 +43,6 @@ C:\Users\Colin\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.Logic\o
 C:\Users\Colin\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.csproj.CopyComplete
 C:\Users\Colin\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.dll
 C:\Users\Colin\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.pdb
+C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\BrowserDatabase.mdf
+C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\BrowserDatabase_log.ldf
+C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Data.dll.config
