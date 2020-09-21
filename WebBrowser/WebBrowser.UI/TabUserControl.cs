@@ -79,9 +79,7 @@ namespace WebBrowser.UI
 
         public void forwardButton_Click(object sender, EventArgs e)
         {
-            // TODO maybe delete \/
-/*            backLinks.Push(addressTextBox.Text); 
-*/            try
+            try
             {
                 string forwardURL = forwardLinks.Pop();
                 webBrowser1.Navigate(forwardURL); 
@@ -169,6 +167,11 @@ namespace WebBrowser.UI
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            addressTextBox.Text = "";
         }
     }
 }
