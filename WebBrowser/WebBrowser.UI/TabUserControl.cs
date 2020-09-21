@@ -28,14 +28,23 @@ namespace WebBrowser.UI
             // push current link to back button stack
             backLinks.Push(addressTextBox.Text);
             var newHistoryItem = new HistoryItem(webBrowser1.Url.ToString(), webBrowser1.DocumentTitle, DateTime.Now);
-            HistoryManager.AddHistoryItem(newHistoryItem); 
+            HistoryManager.AddHistoryItem(newHistoryItem);
         }
 
-        public void WebBrowser1_ProgressChanged(Object sender, WebBrowserProgressChangedEventArgs e)
+        // Sets progress bar
+        private void webBrowser1_ProgressChanged_1(object sender, WebBrowserProgressChangedEventArgs e)
         {
-            toolStripProgressBar1.Maximum = (int)e.MaximumProgress;
-            toolStripProgressBar1.Value = (int)e.CurrentProgress; 
+            toolStripProgressBar1.Visible = true;
+            toolStripProgressBar1.Minimum = 0;
+            toolStripProgressBar1.Maximum = (int)e.MaximumProgress; 
+
+            if((e.CurrentProgress > 0))
+            {
+                toolStripProgressBar1.Value = (int)e.CurrentProgress;
+            }
         }
+
+
 
         /************************************************************
         *********************** Tool Strip *************************
@@ -133,6 +142,11 @@ namespace WebBrowser.UI
         }
 
         private void toolStripProgressBar1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripProgressBar1_VisibleChanged(object sender, EventArgs e)
         {
 
         }

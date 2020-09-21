@@ -72,8 +72,6 @@ C:\Users\Colin\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.UI\obj\
 C:\Users\Colin\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csproj.CopyComplete
 C:\Users\Colin\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.exe
 C:\Users\Colin\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.pdb
-C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\BrowserDatabase.mdf
-C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\BrowserDatabase_log.ldf
 C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Data.dll
 C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Data.pdb
 C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Data.dll.config

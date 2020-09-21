@@ -50,9 +50,11 @@
             this.webBrowser1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(11, 13);
             this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.ScriptErrorsSuppressed = true;
             this.webBrowser1.Size = new System.Drawing.Size(576, 516);
             this.webBrowser1.TabIndex = 0;
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
+            this.webBrowser1.ProgressChanged += new System.Windows.Forms.WebBrowserProgressChangedEventHandler(this.webBrowser1_ProgressChanged_1);
             // 
             // toolStrip1
             // 
@@ -157,7 +159,9 @@
             // 
             this.toolStripProgressBar1.Name = "toolStripProgressBar1";
             this.toolStripProgressBar1.Size = new System.Drawing.Size(100, 20);
+            this.toolStripProgressBar1.Visible = false;
             this.toolStripProgressBar1.Click += new System.EventHandler(this.toolStripProgressBar1_Click);
+            this.toolStripProgressBar1.VisibleChanged += new System.EventHandler(this.toolStripProgressBar1_VisibleChanged);
             // 
             // TabUserControl
             // 
