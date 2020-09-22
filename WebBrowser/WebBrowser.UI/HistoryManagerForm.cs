@@ -59,17 +59,5 @@ namespace WebBrowser.UI
         {
 
         }
-
-        private void ClearHistoryButton_Click(object sender, EventArgs e)
-        {
-            string message = "Are you sure you want to clear history?";
-            var confirmBox = MessageBox.Show(message, "Warning", 
-                MessageBoxButtons.YesNo, MessageBoxIcon.Warning); 
-            if(confirmBox == DialogResult.Yes)
-            {
-                HistoryManager.ClearHistory();
-                HistoryListBox.Items.Clear();
-            }
-        }
     }
 }

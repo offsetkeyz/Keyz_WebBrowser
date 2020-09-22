@@ -72,7 +72,7 @@
             this.printPageToolStripMenuItem,
             this.exitBrowserToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(54, 29);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(54, 34);
             this.toolStripMenuItem1.Text = "File";
             // 
             // newTabToolStrip
@@ -116,7 +116,7 @@
             this.manageHistoryToolStripMenuItem,
             this.manageBookmarksToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(69, 29);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(69, 34);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // manageHistoryToolStripMenuItem
@@ -138,7 +138,7 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(65, 29);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(65, 34);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
@@ -156,17 +156,17 @@
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1488, 1296);
+            this.tabControl1.Size = new System.Drawing.Size(1488, 1175);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.tabUserControl1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 31);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.tabPage1.Size = new System.Drawing.Size(1480, 1261);
+            this.tabPage1.Size = new System.Drawing.Size(1480, 1142);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "New Tab";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -179,23 +179,19 @@
             this.tabUserControl1.Location = new System.Drawing.Point(2, 1);
             this.tabUserControl1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.tabUserControl1.Name = "tabUserControl1";
-            this.tabUserControl1.Size = new System.Drawing.Size(1476, 1259);
+            this.tabUserControl1.Size = new System.Drawing.Size(1476, 1140);
             this.tabUserControl1.TabIndex = 0;
             this.tabUserControl1.Load += new System.EventHandler(this.tabUserControl1_Load);
             // 
             // BrowserForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1488, 1327);
+            this.ClientSize = new System.Drawing.Size(1488, 1206);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip2);
-            this.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "BrowserForm";
-            this.ShowIcon = false;
-            this.ShowInTaskbar = false;
-            this.Text = "KeyZ";
+            this.Text = "Colins Browser";
             this.Load += new System.EventHandler(this.BrowserForm_Load);
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
