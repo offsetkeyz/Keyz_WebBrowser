@@ -45,6 +45,28 @@ namespace WebBrowser.Logic
             return results;
         }
 
+        /**
+         * Deletes item from table adapter based on index of listbox.
+         */
+        public static bool DeleteHistoryItem(int index)
+        {
+            bool itWorked = false; 
+            var adapter = new HistoryTableAdapter();
+            var rows = adapter.GetData();
+            foreach (var row in rows)
+            {
+                if(row.Id == index + 1)
+                {
+                    adapter.Delete(row.Id, row.URL, row.Title, row.Date);
+                }
+            }
+
+            return itWorked; 
+        }
+
+        /**
+         * Clears History from table adapter
+         */
         public static void ClearHistory()
         {
             var adapter = new HistoryTableAdapter();

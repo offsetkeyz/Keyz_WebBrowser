@@ -33,6 +33,7 @@
             this.HistorySearchTextBox = new System.Windows.Forms.TextBox();
             this.HistorySearchButton = new System.Windows.Forms.Button();
             this.ClearHistoryButton = new System.Windows.Forms.Button();
+            this.DeleteHistoryItemButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // HistoryListBox
@@ -89,11 +90,22 @@
             this.ClearHistoryButton.UseVisualStyleBackColor = true;
             this.ClearHistoryButton.Click += new System.EventHandler(this.ClearHistoryButton_Click);
             // 
+            // DeleteHistoryItemButton
+            // 
+            this.DeleteHistoryItemButton.Location = new System.Drawing.Point(500, 130);
+            this.DeleteHistoryItemButton.Name = "DeleteHistoryItemButton";
+            this.DeleteHistoryItemButton.Size = new System.Drawing.Size(223, 41);
+            this.DeleteHistoryItemButton.TabIndex = 5;
+            this.DeleteHistoryItemButton.Text = "Delete Selected Item";
+            this.DeleteHistoryItemButton.UseVisualStyleBackColor = true;
+            this.DeleteHistoryItemButton.Click += new System.EventHandler(this.DeleteHistoryItemButton_Click);
+            // 
             // HistoryManagerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 692);
+            this.Controls.Add(this.DeleteHistoryItemButton);
             this.Controls.Add(this.ClearHistoryButton);
             this.Controls.Add(this.HistorySearchButton);
             this.Controls.Add(this.HistorySearchTextBox);
@@ -115,5 +127,6 @@
         private System.Windows.Forms.TextBox HistorySearchTextBox;
         private System.Windows.Forms.Button HistorySearchButton;
         private System.Windows.Forms.Button ClearHistoryButton;
+        private System.Windows.Forms.Button DeleteHistoryItemButton;
     }
 }

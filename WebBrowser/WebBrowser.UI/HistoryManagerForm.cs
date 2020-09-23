@@ -19,21 +19,13 @@ namespace WebBrowser.UI
         }
 
 
-        // TODO 26:00 in video
         private void HistoryListBox_SelectedIndexChanged(object sender, EventArgs e)
         {
         }
 
         private void HistoryManagerForm_Load(object sender, EventArgs e)
         {
-            var items = HistoryManager.GetAllHistoryItems();
-            HistoryListBox.Items.Clear(); 
-
-            foreach(var item in items)
-            {
-                HistoryListBox.Items.Add(string.Format("[{0}] {1} ({2})", 
-                    item.Date, item.Title, item.URL)); 
-            }
+            PopulateHistoryListBox(); 
         }
 
         private void HistorySearchButton_Click(object sender, EventArgs e)
@@ -70,6 +62,29 @@ namespace WebBrowser.UI
                 HistoryManager.ClearHistory();
                 HistoryListBox.Items.Clear();
             }
+        }
+
+        private void DeleteHistoryItemButton_Click(object sender, EventArgs e)
+        {
+            int ItemIndex = HistoryListBox.SelectedIndex;
+            HistoryManager.DeleteHistoryItem(ItemIndex);
+            PopulateHistoryListBox(); 
+        }
+
+        /**
+         * populates the history listbox
+         */
+        protected void PopulateHistoryListBox()
+        {
+            var items = HistoryManager.GetAllHistoryItems();
+            HistoryListBox.Items.Clear();
+
+            foreach (var item in items)
+            {
+                HistoryListBox.Items.Add(string.Format("[{0}] {1} ({2})",
+                    item.Date, item.Title, item.URL));
+            }
+
         }
     }
 }
