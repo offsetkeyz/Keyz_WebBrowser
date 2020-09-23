@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,15 +28,53 @@ namespace WebBrowser.Logic
         {
             var adapter = new HistoryTableAdapter();
             var results = new List<HistoryItem>();
-            var rows = adapter.GetData();
+            try
+            {
+                var rows = adapter.GetData();
+                foreach (var row in rows)
+                {
+                    var item = new HistoryItem(row.URL, row.Title, row.Date);
 
+                    results.Add(item);
+                }
+            } finally
+            {
+
+            }
+
+            return results;
+        }
+
+        /**
+         * Deletes item from table adapter based on index of listbox.
+         */
+        public static bool DeleteHistoryItem(int index)
+        {
+            bool itWorked = false; 
+            var adapter = new HistoryTableAdapter();
+            var rows = adapter.GetData();
             foreach (var row in rows)
             {
-                var item = new HistoryItem(row.URL, row.Title, row.Date);
-
-                results.Add(item);
+                if(row.Id == index + 1)
+                {
+                    adapter.Delete(row.Id, row.URL, row.Title, row.Date);
+                }
             }
-            return results;
+
+            return itWorked; 
+        }
+
+        /**
+         * Clears History from table adapter
+         */
+        public static void ClearHistory()
+        {
+            var adapter = new HistoryTableAdapter();
+            var rows = adapter.GetData();
+            foreach (var row in rows)
+            {
+                adapter.Delete(row.Id, row.URL, row.Title, row.Date);
+            }
         }
 
     }

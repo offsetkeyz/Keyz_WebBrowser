@@ -779,9 +779,9 @@ namespace WebBrowser.Data {
                 this.columnId.ReadOnly = true;
                 this.columnId.Unique = true;
                 this.columnURL.AllowDBNull = false;
-                this.columnURL.MaxLength = 100;
+                this.columnURL.MaxLength = 1000;
                 this.columnTitle.AllowDBNull = false;
-                this.columnTitle.MaxLength = 50;
+                this.columnTitle.MaxLength = 500;
                 this.columnDate.AllowDBNull = false;
             }
             
@@ -1632,7 +1632,7 @@ namespace WebBrowser.Data.BrowserDatasetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT   History.*\r\nFROM         History";
+            this._commandCollection[0].CommandText = "SELECT History.*\r\nFROM   History";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

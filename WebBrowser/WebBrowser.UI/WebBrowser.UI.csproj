@@ -131,5 +131,11 @@
   <ItemGroup>
     <None Include="Resources\iconmonstr-refresh-1-240.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clear-formatting-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facecutout_square_ser_icon.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

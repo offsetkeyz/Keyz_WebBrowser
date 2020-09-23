@@ -5,7 +5,6 @@ C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserP
 C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Logic.pdb
 C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csprojAssemblyReference.cache
 C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.BrowserForm.resources
-C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.NewTab.resources
 C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.Properties.Resources.resources
 C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csproj.GenerateResource.cache
 C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csproj.CoreCompileInputs.cache
@@ -73,3 +72,53 @@ C:\Users\Colin\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.UI\obj\
 C:\Users\Colin\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csproj.CopyComplete
 C:\Users\Colin\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.exe
 C:\Users\Colin\Documents\GitHub\Web_Browser_Auburn\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.pdb
+C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Data.dll
+C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Data.pdb
+C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Data.dll.config
+C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.BookmarkManagerForm.resources
+C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.HistoryManagerForm.resources
+C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.TabUserControl.resources
+C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\BrowserDatabase.mdf
+C:\Users\Colin\OneDrive - Auburn University\Q4\Software_Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\BrowserDatabase_log.ldf
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\BrowserDatabase.mdf
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\BrowserDatabase_log.ldf
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.UI.exe.config
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.UI.exe
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.UI.pdb
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Logic.dll
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Data.dll
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Logic.pdb
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Data.pdb
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Data.dll.config
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csprojAssemblyReference.cache
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.BookmarkManagerForm.resources
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.BrowserForm.resources
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.HistoryManagerForm.resources
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.TabUserControl.resources
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.Properties.Resources.resources
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csproj.GenerateResource.cache
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csproj.CoreCompileInputs.cache
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csproj.CopyComplete
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.exe
+D:\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.pdb
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.UI.exe.config
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.UI.exe
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.UI.pdb
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Logic.dll
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Data.dll
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Logic.pdb
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Data.pdb
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.Data.dll.config
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csprojAssemblyReference.cache
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.BookmarkManagerForm.resources
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.BrowserForm.resources
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.HistoryManagerForm.resources
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.TabUserControl.resources
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.Properties.Resources.resources
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csproj.GenerateResource.cache
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csproj.CoreCompileInputs.cache
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csproj.CopyComplete
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.exe
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.pdb
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\BrowserDatabase.mdf
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\BrowserDatabase_log.ldf
