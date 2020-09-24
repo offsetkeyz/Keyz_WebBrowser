@@ -70,27 +70,17 @@ namespace WebBrowser.UI
         ************************************************************/
         public void backButton_Click(object sender, EventArgs e)
         {
-            forwardLinks.Push(addressTextBox.Text);
-            try
+            if(webBrowser1.CanGoBack)
             {
-                string backURL = backLinks.Pop();
-                webBrowser1.Navigate(backURL);
-            } catch
-            {
-                Console.WriteLine("BackButton Error"); 
+                webBrowser1.GoBack(); 
             }
         }      
 
         public void forwardButton_Click(object sender, EventArgs e)
         {
-            try
+            if(webBrowser1.CanGoForward)
             {
-                string forwardURL = forwardLinks.Pop();
-                webBrowser1.Navigate(forwardURL); 
-            } catch
-            {
-                Console.WriteLine("ForwardButton Error");
-
+                webBrowser1.GoForward();
             }
         }
 
@@ -101,7 +91,7 @@ namespace WebBrowser.UI
 
         public void homeButton_Click(object sender, EventArgs e)
         {
-
+            webBrowser1.Navigate("https://www.google.com"); 
         }
 
         public void addressTextBox_Click(object sender, EventArgs e)
