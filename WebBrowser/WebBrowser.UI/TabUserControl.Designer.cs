@@ -129,9 +129,10 @@
             this.addressTextBox.AcceptsReturn = true;
             this.addressTextBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.addressTextBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.HistoryList;
+            this.addressTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.addressTextBox.Size = new System.Drawing.Size(280, 33);
+            this.addressTextBox.Size = new System.Drawing.Size(260, 33);
             this.addressTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.addressTextBox_KeyDown);
             this.addressTextBox.Click += new System.EventHandler(this.addressTextBox_Click);
             // 
@@ -168,6 +169,7 @@
             // toolStrip1
             // 
             this.toolStrip1.AllowMerge = false;
+            this.toolStrip1.BackColor = System.Drawing.Color.SteelBlue;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.backButton,

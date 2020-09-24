@@ -43,7 +43,20 @@ namespace WebBrowser.UI
 
         private void BookmarkSearchButton_Click(object sender, EventArgs e)
         {
-
+            if(!BookmarkSearchTextBox.Text.Trim().Equals(""))
+            {
+                var items = BookmarkManager.GetAllBookmarkItems();
+                BookmarksListBox.Items.Clear();
+                string searchFor = BookmarkSearchTextBox.Text.Trim().ToLower(); 
+                foreach(var item in items)
+                {
+                    if(item.URL.Contains(searchFor) || item.Title.Contains(searchFor))
+                    {
+                        BookmarksListBox.Items.Add(string.Format("{0} ({1})",
+                            item.Title, item.URL));
+                    }
+                }
+            }
         }
 
         private void DeleteBookmarkItemButton_Click(object sender, EventArgs e)

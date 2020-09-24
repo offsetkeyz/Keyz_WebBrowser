@@ -37,6 +37,7 @@
             // 
             // BookmarksListBox
             // 
+            this.BookmarksListBox.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BookmarksListBox.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.BookmarksListBox.FormattingEnabled = true;
             this.BookmarksListBox.ItemHeight = 20;
@@ -91,6 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.DeleteBookmarkItemButton);
             this.Controls.Add(this.BookmarkSearchButton);
