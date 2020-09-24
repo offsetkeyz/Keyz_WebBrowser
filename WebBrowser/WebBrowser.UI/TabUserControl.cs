@@ -25,12 +25,16 @@ namespace WebBrowser.UI
 
         public void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
-            
-            addressTextBox.Text = webBrowser1.Url.ToString();
-            // push current link to back button stack
-            backLinks.Push(addressTextBox.Text);
-            var newHistoryItem = new HistoryItem(webBrowser1.Url.ToString(), webBrowser1.DocumentTitle, DateTime.Now);
-            HistoryManager.AddHistoryItem(newHistoryItem);
+            string previousURL = addressTextBox.Text;
+            string currentURL = addressTextBox.Text = webBrowser1.Url.ToString();
+
+            // push current link to back button stack if not the same as previous
+            if (!previousURL.Equals(currentURL))
+            {
+                backLinks.Push(currentURL);
+                var newHistoryItem = new HistoryItem(webBrowser1.Url.ToString(), webBrowser1.DocumentTitle, DateTime.Now);
+                HistoryManager.AddHistoryItem(newHistoryItem);
+            }
         }
 
         private void webBrowser1_Navigated(object sender, WebBrowserNavigatedEventArgs e)
