@@ -13,25 +13,28 @@ namespace WebBrowser.UI
 {
     public partial class BrowserForm : Form
     {
+
+        public TabControl publicTabControl; 
+
         public BrowserForm()
         {
             InitializeComponent();
+            publicTabControl = tabControl1; 
         }
 
         public void BrowserForm_Load(object sender, EventArgs e)
         {
-
         }
 
         /************************************************************
          *********************** Menu Strip *************************
          ************************************************************/
         // File Options
-        protected void newTabToolStrip_Click(object sender, EventArgs e)
+        public void newTabToolStrip_Click(object sender, EventArgs e)
         {
             TabPage newTabPage = new TabPage();
             newTabPage.Text = "New Tab";
-            TabUserControl newUserControl = new TabUserControl();
+            TabUserControl newUserControl = new TabUserControl(newTabPage);
             newUserControl.Dock = DockStyle.Fill; 
             newTabPage.Controls.Add(newUserControl); 
             this.tabControl1.TabPages.Add(newTabPage); 
@@ -47,7 +50,7 @@ namespace WebBrowser.UI
             {
                 TabPage newTabPage = new TabPage();
                 newTabPage.Text = "New Tab";
-                TabUserControl newUserControl = new TabUserControl();
+                TabUserControl newUserControl = new TabUserControl(newTabPage);
                 newUserControl.Dock = DockStyle.Fill;
                 newTabPage.Controls.Add(newUserControl);
                 tabControl1.TabPages.Add(newTabPage);
@@ -118,10 +121,11 @@ namespace WebBrowser.UI
             MessageBox.Show(message);
         }
 
-        protected void tabUserControl1_Load(object sender, EventArgs e)
+        public void tabUserControl1_Load(object sender, EventArgs e)
         {
-            
         }
+
+
 
 
         /*************************************************************************
@@ -135,11 +139,13 @@ namespace WebBrowser.UI
             {
                 TabPage newTabPage = new TabPage();
                 newTabPage.Text = "New Tab";
-                TabUserControl newUserControl = new TabUserControl();
+                TabUserControl newUserControl = new TabUserControl(newTabPage);
                 newUserControl.Dock = DockStyle.Fill;
                 newTabPage.Controls.Add(newUserControl);
-                tabControl1.TabPages.Insert(lastIndex, newTabPage); 
+                tabControl1.TabPages.Insert(lastIndex, newTabPage);
+                this.tabControl1.SelectedIndex = lastIndex; 
             }
+
         }
 
         // prevent selecting
@@ -149,6 +155,38 @@ namespace WebBrowser.UI
             {
                 e.Cancel = true; 
             }
+        }
+
+        //**************************** Adds X to tab ********************************
+        private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
+        {
+/*            e.Graphics.DrawString("x", e.Font, Brushes.Black, e.Bounds.Right - 15, e.Bounds.Top + 4);
+            e.Graphics.DrawString(this.tabControl1.TabPages[e.Index].Text, e.Font, Brushes.Black,
+                e.Bounds.Left + 12, e.Bounds.Top + 4);
+            e.DrawFocusRectangle();
+*/        }
+
+        private void BrowserForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            /*            for (int i = 0; i < this.tabControl1.TabPages.Count; i++)
+                        {
+                            Rectangle r = tabControl1.GetTabRect(i);
+                            //Getting the position of the "x" mark.
+                            Rectangle closeButton = new Rectangle(r.Right - 15, r.Top + 4, 9, 7);
+                            if (closeButton.Contains(e.Location))
+                            {
+                                if (MessageBox.Show("Would you like to Close this Tab?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                                {
+                                    this.tabControl1.TabPages.RemoveAt(i);
+                                    break;
+
+
+                        tabControl1.SelectedTab.Text = this.tabUserControl1.webBrowserTitle; 
+
+                                }
+                            }
+                        }
+            */
         }
     }
 }
