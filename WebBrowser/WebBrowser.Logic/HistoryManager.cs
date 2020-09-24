@@ -28,13 +28,13 @@ namespace WebBrowser.Logic
         {
             var adapter = new HistoryTableAdapter();
             var results = new List<HistoryItem>();
+            int itemIndex = 1; 
             try
             {
                 var rows = adapter.GetData();
                 foreach (var row in rows)
                 {
                     var item = new HistoryItem(row.URL, row.Title, row.Date);
-
                     results.Add(item);
                 }
             } finally
@@ -48,16 +48,17 @@ namespace WebBrowser.Logic
         /**
          * Deletes item from table adapter based on index of listbox.
          */
-        public static bool DeleteHistoryItem(int index)
+        public static bool DeleteHistoryItem(string URLin)
         {
             bool itWorked = false; 
             var adapter = new HistoryTableAdapter();
             var rows = adapter.GetData();
             foreach (var row in rows)
             {
-                if(row.Id == index + 1)
+                if(row.URL.Equals(URLin)) 
                 {
                     adapter.Delete(row.Id, row.URL, row.Title, row.Date);
+                    break; 
                 }
             }
 

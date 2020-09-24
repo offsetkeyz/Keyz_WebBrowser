@@ -66,8 +66,17 @@ namespace WebBrowser.UI
 
         private void DeleteHistoryItemButton_Click(object sender, EventArgs e)
         {
-            int ItemIndex = HistoryListBox.SelectedIndex;
-            HistoryManager.DeleteHistoryItem(ItemIndex);
+            string selectedHistoryItem = HistoryListBox.Items[HistoryListBox.SelectedIndex].ToString();
+            string selectedURLString = selectedHistoryItem.Split('(', ')')[1];
+            try
+            {
+                HistoryManager.DeleteHistoryItem(selectedURLString);
+
+            }
+            catch
+            {
+
+            }
             PopulateHistoryListBox(); 
         }
 
