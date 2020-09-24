@@ -73,11 +73,10 @@ namespace WebBrowser.UI
                 try
                 {
                     HistoryManager.DeleteHistoryItem(selectedURLString);
-
                 }
                 catch
                 {
-
+                    Console.WriteLine("Delete History Error"); 
                 }
                 PopulateHistoryListBox();
             }

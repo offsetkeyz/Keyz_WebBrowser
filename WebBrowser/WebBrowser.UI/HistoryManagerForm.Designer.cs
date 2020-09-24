@@ -38,6 +38,7 @@
             // 
             // HistoryListBox
             // 
+            this.HistoryListBox.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.HistoryListBox.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.HistoryListBox.FormattingEnabled = true;
             this.HistoryListBox.ItemHeight = 20;
@@ -104,6 +105,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(1200, 692);
             this.Controls.Add(this.DeleteHistoryItemButton);
             this.Controls.Add(this.ClearHistoryButton);

@@ -77,7 +77,7 @@ namespace WebBrowser.UI
                 webBrowser1.Navigate(backURL);
             } catch
             {
-
+                Console.WriteLine("BackButton Error"); 
             }
         }      
 
@@ -89,6 +89,7 @@ namespace WebBrowser.UI
                 webBrowser1.Navigate(forwardURL); 
             } catch
             {
+                Console.WriteLine("ForwardButton Error");
 
             }
         }
