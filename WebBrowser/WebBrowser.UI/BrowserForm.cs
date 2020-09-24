@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WebBrowser.Logic;
 
 namespace WebBrowser.UI
 {
@@ -107,6 +108,19 @@ namespace WebBrowser.UI
         protected void tabUserControl1_Load(object sender, EventArgs e)
         {
             
+        }
+
+        private void clearHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string message = "Are you sure you want to clear history?";
+            var confirmBox = MessageBox.Show(message, "Warning",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (confirmBox == DialogResult.Yes)
+            {
+                HistoryManager newManager = new HistoryManager(); 
+                HistoryManager.ClearHistory();
+            }
+
         }
     }
 }

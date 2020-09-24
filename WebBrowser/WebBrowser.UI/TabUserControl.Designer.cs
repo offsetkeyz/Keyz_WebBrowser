@@ -132,7 +132,7 @@
             this.addressTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.addressTextBox.Name = "addressTextBox";
             this.addressTextBox.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.addressTextBox.Size = new System.Drawing.Size(260, 33);
+            this.addressTextBox.Size = new System.Drawing.Size(400, 31);
             this.addressTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.addressTextBox_KeyDown);
             this.addressTextBox.Click += new System.EventHandler(this.addressTextBox_Click);
             // 
