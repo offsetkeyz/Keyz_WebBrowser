@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrowserForm));
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.newTabToolStrip = new System.Windows.Forms.ToolStripMenuItem();
@@ -58,7 +59,7 @@
             this.menuStrip2.Location = new System.Drawing.Point(0, 0);
             this.menuStrip2.Name = "menuStrip2";
             this.menuStrip2.Padding = new System.Windows.Forms.Padding(6, 1, 0, 1);
-            this.menuStrip2.Size = new System.Drawing.Size(1488, 36);
+            this.menuStrip2.Size = new System.Drawing.Size(1488, 31);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
             // 
@@ -71,7 +72,7 @@
             this.printPageToolStripMenuItem,
             this.exitBrowserToolStripMenuItem});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(54, 34);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(54, 29);
             this.toolStripMenuItem1.Text = "File";
             // 
             // newTabToolStrip
@@ -116,7 +117,7 @@
             this.manageBookmarksToolStripMenuItem,
             this.clearHistoryToolStripMenuItem});
             this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
-            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(69, 34);
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(69, 29);
             this.toolsToolStripMenuItem.Text = "Tools";
             // 
             // manageHistoryToolStripMenuItem
@@ -145,7 +146,7 @@
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(65, 34);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(65, 29);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutToolStripMenuItem
@@ -162,12 +163,12 @@
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.HotTrack = true;
             this.tabControl1.ItemSize = new System.Drawing.Size(100, 27);
-            this.tabControl1.Location = new System.Drawing.Point(0, 36);
+            this.tabControl1.Location = new System.Drawing.Point(0, 31);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.Padding = new System.Drawing.Point(15, 3);
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1488, 1291);
+            this.tabControl1.Size = new System.Drawing.Size(1488, 1296);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 3;
             this.tabControl1.TabStop = false;
@@ -181,7 +182,7 @@
             this.addTabPage.Location = new System.Drawing.Point(4, 31);
             this.addTabPage.Name = "addTabPage";
             this.addTabPage.Padding = new System.Windows.Forms.Padding(3);
-            this.addTabPage.Size = new System.Drawing.Size(1480, 1256);
+            this.addTabPage.Size = new System.Drawing.Size(1480, 1261);
             this.addTabPage.TabIndex = 1;
             this.addTabPage.Text = " + ";
             // 
@@ -194,10 +195,10 @@
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.menuStrip2);
             this.Font = new System.Drawing.Font("Arial Narrow", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BrowserForm";
-            this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "KeyZ";
+            this.Text = "KEYZ";
             this.Load += new System.EventHandler(this.BrowserForm_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BrowserForm_MouseDown);
             this.menuStrip2.ResumeLayout(false);

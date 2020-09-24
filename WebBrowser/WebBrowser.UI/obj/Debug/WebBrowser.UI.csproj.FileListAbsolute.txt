@@ -120,5 +120,9 @@ D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\We
 D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.csproj.CopyComplete
 D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.exe
 D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.pdb
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.UI.exe.manifest
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\WebBrowser.UI.application
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.exe.manifest
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\obj\Debug\WebBrowser.UI.application
 D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\BrowserDatabase.mdf
 D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.UI\bin\Debug\BrowserDatabase_log.ldf
