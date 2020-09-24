@@ -14,16 +14,32 @@ namespace WebBrowser.UI
     public partial class BrowserForm : Form
     {
 
-        public TabControl publicTabControl; 
-
         public BrowserForm()
         {
             InitializeComponent();
-            publicTabControl = tabControl1; 
         }
 
         public void BrowserForm_Load(object sender, EventArgs e)
         {
+            CreateNewTab();
+        }
+
+        /**
+         * Creates a new tab at the second to last index
+         */
+        public void CreateNewTab()
+        {
+            var lastIndex = this.tabControl1.TabCount - 1;
+            TabPage newTabPage = new TabPage();
+            newTabPage.Text = "New Tab";
+            TabUserControl newUserControl = new TabUserControl(newTabPage);
+            newUserControl.Dock = DockStyle.Fill;
+            newUserControl.BackgroundImage = Properties.Resources.Keyz_Logo;
+            newUserControl.BackgroundImageLayout = ImageLayout.Zoom;
+
+            newTabPage.Controls.Add(newUserControl);
+            tabControl1.TabPages.Insert(lastIndex, newTabPage);
+            this.tabControl1.SelectedIndex = lastIndex;
         }
 
         /************************************************************
@@ -32,12 +48,7 @@ namespace WebBrowser.UI
         // File Options
         public void newTabToolStrip_Click(object sender, EventArgs e)
         {
-            TabPage newTabPage = new TabPage();
-            newTabPage.Text = "New Tab";
-            TabUserControl newUserControl = new TabUserControl(newTabPage);
-            newUserControl.Dock = DockStyle.Fill; 
-            newTabPage.Controls.Add(newUserControl); 
-            this.tabControl1.TabPages.Add(newTabPage); 
+            CreateNewTab(); 
         }
 
         /** 
@@ -48,12 +59,7 @@ namespace WebBrowser.UI
         {
             if (keyData == (Keys.Control | Keys.T))
             {
-                TabPage newTabPage = new TabPage();
-                newTabPage.Text = "New Tab";
-                TabUserControl newUserControl = new TabUserControl(newTabPage);
-                newUserControl.Dock = DockStyle.Fill;
-                newTabPage.Controls.Add(newUserControl);
-                tabControl1.TabPages.Add(newTabPage);
+                CreateNewTab();
                 return true; 
             }
 
@@ -137,15 +143,8 @@ namespace WebBrowser.UI
             var lastIndex = this.tabControl1.TabCount - 1; 
             if(this.tabControl1.GetTabRect(lastIndex).Contains(e.Location))
             {
-                TabPage newTabPage = new TabPage();
-                newTabPage.Text = "New Tab";
-                TabUserControl newUserControl = new TabUserControl(newTabPage);
-                newUserControl.Dock = DockStyle.Fill;
-                newTabPage.Controls.Add(newUserControl);
-                tabControl1.TabPages.Insert(lastIndex, newTabPage);
-                this.tabControl1.SelectedIndex = lastIndex; 
+                CreateNewTab(); 
             }
-
         }
 
         // prevent selecting

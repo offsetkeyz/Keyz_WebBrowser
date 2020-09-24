@@ -139,7 +139,13 @@
   <data name="iconmonstr-bookmark-1-240" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\iconmonstr-bookmark-1-240.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Keyzz Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keyzz Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="facecutout_square_ser_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\facecutout_square_ser_icon.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Keyz Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Keyz Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -137,5 +137,11 @@
   <ItemGroup>
     <None Include="Resources\facecutout_square_ser_icon.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keyzz Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keyz Logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

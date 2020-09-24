@@ -176,5 +176,10 @@ namespace WebBrowser.UI
         {
             addressTextBox.Text = "";
         }
+
+        private void webBrowser1_Navigating(object sender, WebBrowserNavigatingEventArgs e)
+        {
+            webBrowser1.Visible = true; 
+        }
     }
 }
