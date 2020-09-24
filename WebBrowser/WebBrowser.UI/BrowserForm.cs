@@ -122,5 +122,33 @@ namespace WebBrowser.UI
         {
             
         }
+
+
+        /*************************************************************************
+         * ************************** Add Tab Page *******************************
+         * **********************************************************************/
+        // determines the tab has been clicked
+        private void tabControl1_MouseDown(object sender, MouseEventArgs e)
+        {
+            var lastIndex = this.tabControl1.TabCount - 1; 
+            if(this.tabControl1.GetTabRect(lastIndex).Contains(e.Location))
+            {
+                TabPage newTabPage = new TabPage();
+                newTabPage.Text = "New Tab";
+                TabUserControl newUserControl = new TabUserControl();
+                newUserControl.Dock = DockStyle.Fill;
+                newTabPage.Controls.Add(newUserControl);
+                tabControl1.TabPages.Insert(lastIndex, newTabPage); 
+            }
+        }
+
+        // prevent selecting
+        private void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
+        {
+            if(e.TabPageIndex == this.tabControl1.TabCount - 1)
+            {
+                e.Cancel = true; 
+            }
+        }
     }
 }
