@@ -70,9 +70,10 @@ namespace WebBrowser.UI
             {
                 string selectedHistoryItem = HistoryListBox.Items[HistoryListBox.SelectedIndex].ToString();
                 string selectedURLString = selectedHistoryItem.Split('(', ')')[1];
+                DateTime selectedDate = DateTime.Parse(selectedHistoryItem.Split('[', ']')[1]);
                 try
                 {
-                    HistoryManager.DeleteHistoryItem(selectedURLString);
+                    HistoryManager.DeleteHistoryItem(selectedURLString, selectedDate);
                 }
                 catch
                 {

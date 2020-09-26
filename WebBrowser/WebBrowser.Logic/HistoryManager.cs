@@ -28,7 +28,6 @@ namespace WebBrowser.Logic
         {
             var adapter = new HistoryTableAdapter();
             var results = new List<HistoryItem>();
-            int itemIndex = 1; 
             try
             {
                 var rows = adapter.GetData();
@@ -48,14 +47,14 @@ namespace WebBrowser.Logic
         /**
          * Deletes item from table adapter based on index of listbox.
          */
-        public static bool DeleteHistoryItem(string URLin)
+        public static bool DeleteHistoryItem(string URLin, DateTime dateIn)
         {
             bool itWorked = false; 
             var adapter = new HistoryTableAdapter();
             var rows = adapter.GetData();
             foreach (var row in rows)
-            {
-                if(row.URL.Equals(URLin)) 
+            { // if date and url match, delete
+                if((row.URL.Equals(URLin)) && (row.Date.ToString().Equals(dateIn.ToString()))) 
                 {
                     adapter.Delete(row.Id, row.URL, row.Title, row.Date);
                     break; 
