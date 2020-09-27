@@ -59,3 +59,4 @@ D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\bin\Debug\
 D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.csproj.CoreCompileInputs.cache
 D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.dll
 D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.pdb
+D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.csprojAssemblyReference.cache
