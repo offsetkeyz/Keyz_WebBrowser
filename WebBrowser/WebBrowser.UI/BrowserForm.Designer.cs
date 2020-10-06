@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BrowserForm));
             this.menuStrip2 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -44,8 +45,12 @@
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.addTabPage = new System.Windows.Forms.TabPage();
+            this.RightClickMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.CloseTab = new System.Windows.Forms.ToolStripMenuItem();
+            this.bookmarkTabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.RightClickMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip2
@@ -185,6 +190,30 @@
             this.addTabPage.Size = new System.Drawing.Size(1480, 1261);
             this.addTabPage.TabIndex = 1;
             this.addTabPage.Text = " + ";
+            this.addTabPage.Click += new System.EventHandler(this.addTabPage_Click);
+            // 
+            // RightClickMenuStrip
+            // 
+            this.RightClickMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.RightClickMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CloseTab,
+            this.bookmarkTabToolStripMenuItem});
+            this.RightClickMenuStrip.Name = "RightClickMenuStrip";
+            this.RightClickMenuStrip.Size = new System.Drawing.Size(241, 101);
+            this.RightClickMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.RightClickMenuStrip_Opening);
+            // 
+            // CloseTab
+            // 
+            this.CloseTab.Name = "CloseTab";
+            this.CloseTab.Size = new System.Drawing.Size(240, 32);
+            this.CloseTab.Text = "Close Tab";
+            this.CloseTab.Click += new System.EventHandler(this.CloseTab_Click);
+            // 
+            // bookmarkTabToolStripMenuItem
+            // 
+            this.bookmarkTabToolStripMenuItem.Name = "bookmarkTabToolStripMenuItem";
+            this.bookmarkTabToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
+            this.bookmarkTabToolStripMenuItem.Text = "Bookmark Tab";
             // 
             // BrowserForm
             // 
@@ -204,6 +233,7 @@
             this.menuStrip2.ResumeLayout(false);
             this.menuStrip2.PerformLayout();
             this.tabControl1.ResumeLayout(false);
+            this.RightClickMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -227,6 +257,9 @@
         private System.Windows.Forms.ToolStripMenuItem clearHistoryToolStripMenuItem;
         private System.Windows.Forms.TabPage addTabPage;
         private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.ContextMenuStrip RightClickMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem CloseTab;
+        private System.Windows.Forms.ToolStripMenuItem bookmarkTabToolStripMenuItem;
     }
 }
 

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="WebBrowser.UI.exe" version="1.0.0.5" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="WebBrowser.UI.exe" version="1.0.0.6" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="Resources\facecutout_square_ser_icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZTGIL+oGBB9AyBGxh7hCiOftGJNqpdWIu34FIYitQho=</dsig:DigestValue>
+        <dsig:DigestValue>abiR7HjXP95LTD7I0wIWrwXp4yyIchXJ2j8ndu8ArSE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -62,19 +62,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6e1goeiSJuF/NJgwQLRYqu2ieM4x13eX26W1DUq72eU=</dsig:DigestValue>
+        <dsig:DigestValue>rdtbs2EU4S17R8e+avOVd7IOJ+XmXFdqbLONlkPERBY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebBrowser.UI.exe" size="1953248">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WebBrowser.UI.exe" size="1954272">
       <assemblyIdentity name="WebBrowser.UI" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>BYy+R9mAwxfiv6szKZVxWwtLKC7EwpMcb7o4Rcytwcw=</dsig:DigestValue>
+        <dsig:DigestValue>+JyT6QyIcvFIg1WaQiFMxShCmEvJH0aMIm1ETicGTow=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -84,7 +84,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>amummHnJ/xIgkx2JVxqU6eq3VeILZHsJ/hWGDciZzro=</dsig:DigestValue>
+      <dsig:DigestValue>prv4eSHut2uSUcpU2tCE1Xe3jXNvaa9EpBmLimNBC9I=</dsig:DigestValue>
     </hash>
   </file>
   <file name="BrowserDatabase_log.ldf" size="8388608" writeableType="applicationData">
@@ -93,7 +93,7 @@
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>tpJeR9aZBpqiycDewvD4yBdIJBowx1FGjGh9YrYFWFc=</dsig:DigestValue>
+      <dsig:DigestValue>er25p82kgdcJnpkgf2Ihx+Mjr0bJIgK9baYUCHN6Qoo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Resources\facecutout_square_ser_icon.ico" size="38498">

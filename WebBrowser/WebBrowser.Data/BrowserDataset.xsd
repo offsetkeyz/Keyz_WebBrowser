@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Database1ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="Database1ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WebBrowser.Data.Properties.Settings.GlobalReference.Default.Database1ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="Database1ConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="Database1ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WebBrowser.Data.Properties.Settings.GlobalReference.Default.Database1ConnectionString" Provider="System.Data.SqlClient" />
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BrowserDatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BrowserDatabaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WebBrowser.Data.Properties.Settings.GlobalReference.Default.BrowserDatabaseConnectionString" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
@@ -148,7 +148,7 @@ SELECT Id, URL, Title, Date FROM History WHERE (Id = @Id)</CommandText>
   <xs:element name="BrowserDataset" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="BrowserDataset" msprop:Generator_UserDSName="BrowserDataset">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Bookmarks" msprop:Generator_TableClassName="BookmarksDataTable" msprop:Generator_TableVarName="tableBookmarks" msprop:Generator_TablePropName="Bookmarks" msprop:Generator_RowDeletingName="BookmarksRowDeleting" msprop:Generator_RowChangingName="BookmarksRowChanging" msprop:Generator_RowEvHandlerName="BookmarksRowChangeEventHandler" msprop:Generator_RowDeletedName="BookmarksRowDeleted" msprop:Generator_UserTableName="Bookmarks" msprop:Generator_RowChangedName="BookmarksRowChanged" msprop:Generator_RowEvArgName="BookmarksRowChangeEvent" msprop:Generator_RowClassName="BookmarksRow">
+        <xs:element name="Bookmarks" msprop:Generator_TableClassName="BookmarksDataTable" msprop:Generator_TableVarName="tableBookmarks" msprop:Generator_RowChangedName="BookmarksRowChanged" msprop:Generator_TablePropName="Bookmarks" msprop:Generator_RowDeletingName="BookmarksRowDeleting" msprop:Generator_RowChangingName="BookmarksRowChanging" msprop:Generator_RowEvHandlerName="BookmarksRowChangeEventHandler" msprop:Generator_RowDeletedName="BookmarksRowDeleted" msprop:Generator_RowClassName="BookmarksRow" msprop:Generator_UserTableName="Bookmarks" msprop:Generator_RowEvArgName="BookmarksRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />
@@ -169,7 +169,7 @@ SELECT Id, URL, Title, Date FROM History WHERE (Id = @Id)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="History" msprop:Generator_TableClassName="HistoryDataTable" msprop:Generator_TableVarName="tableHistory" msprop:Generator_RowChangedName="HistoryRowChanged" msprop:Generator_TablePropName="History" msprop:Generator_RowDeletingName="HistoryRowDeleting" msprop:Generator_RowChangingName="HistoryRowChanging" msprop:Generator_RowEvHandlerName="HistoryRowChangeEventHandler" msprop:Generator_RowDeletedName="HistoryRowDeleted" msprop:Generator_RowClassName="HistoryRow" msprop:Generator_UserTableName="History" msprop:Generator_RowEvArgName="HistoryRowChangeEvent">
+        <xs:element name="History" msprop:Generator_TableClassName="HistoryDataTable" msprop:Generator_TableVarName="tableHistory" msprop:Generator_TablePropName="History" msprop:Generator_RowDeletingName="HistoryRowDeleting" msprop:Generator_RowChangingName="HistoryRowChanging" msprop:Generator_RowEvHandlerName="HistoryRowChangeEventHandler" msprop:Generator_RowDeletedName="HistoryRowDeleted" msprop:Generator_UserTableName="History" msprop:Generator_RowChangedName="HistoryRowChanged" msprop:Generator_RowEvArgName="HistoryRowChangeEvent" msprop:Generator_RowClassName="HistoryRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnId" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_UserColumnName="Id" type="xs:int" />

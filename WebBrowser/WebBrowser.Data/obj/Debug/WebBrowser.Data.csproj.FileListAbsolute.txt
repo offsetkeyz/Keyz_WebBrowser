@@ -60,3 +60,12 @@ D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\
 D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.dll
 D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.pdb
 D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.csprojAssemblyReference.cache
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\bin\Debug\BrowserDatabase.mdf
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\bin\Debug\BrowserDatabase_log.ldf
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\bin\Debug\WebBrowser.Data.dll.config
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\bin\Debug\WebBrowser.Data.dll
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\bin\Debug\WebBrowser.Data.pdb
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.csproj.CoreCompileInputs.cache
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.dll
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.pdb
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Data\obj\Debug\WebBrowser.Data.csprojAssemblyReference.cache

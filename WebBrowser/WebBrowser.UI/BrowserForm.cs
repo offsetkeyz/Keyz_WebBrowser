@@ -12,7 +12,8 @@ using WebBrowser.Logic;
 namespace WebBrowser.UI
 {
     public partial class BrowserForm : Form
-    {
+    {        
+        public TabPage selectedTabPage;  
 
         public BrowserForm()
         {
@@ -24,28 +25,13 @@ namespace WebBrowser.UI
             CreateNewTab();
         }
 
-        /**
-         * Creates a new tab at the second to last index
-         */
-        public void CreateNewTab()
-        {
-            var lastIndex = this.tabControl1.TabCount - 1;
-            TabPage newTabPage = new TabPage();
-            newTabPage.Text = "New Tab";
-            TabUserControl newUserControl = new TabUserControl(newTabPage);
-            newUserControl.Dock = DockStyle.Fill;
-            newUserControl.BackgroundImage = Properties.Resources.Keyz_Logo;
-            newUserControl.BackgroundImageLayout = ImageLayout.Zoom;
-
-            newTabPage.Controls.Add(newUserControl);
-            tabControl1.TabPages.Insert(lastIndex, newTabPage);
-            this.tabControl1.SelectedIndex = lastIndex;
-        }
-
         /************************************************************
          *********************** Menu Strip *************************
          ************************************************************/
         // File Options
+        /**
+         * Create new tab
+         */
         public void newTabToolStrip_Click(object sender, EventArgs e)
         {
             CreateNewTab(); 
@@ -72,19 +58,16 @@ namespace WebBrowser.UI
 
         }
 
+        /**
+         * Close current tab
+         */
         private void closeCurrentTabToolStripMenuItem_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab.Dispose(); 
         }
 
         private void savePageAsHTMLToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void printPageToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
+        {//TODO create this
         }
 
         private void exitBrowserToolStripMenuItem_Click(object sender, EventArgs e)
@@ -127,27 +110,42 @@ namespace WebBrowser.UI
             MessageBox.Show(message);
         }
 
-        public void tabUserControl1_Load(object sender, EventArgs e)
-        {
-        }
-
-
-
 
         /*************************************************************************
          * ************************** Add Tab Page *******************************
          * **********************************************************************/
+
         // determines the tab has been clicked
-        private void tabControl1_MouseDown(object sender, MouseEventArgs e)
+        protected void tabControl1_MouseDown(object sender, MouseEventArgs e)
         {
             var lastIndex = this.tabControl1.TabCount - 1; 
             if(this.tabControl1.GetTabRect(lastIndex).Contains(e.Location))
             {
                 CreateNewTab(); 
             }
+
+            // right click on tab
+            if (e.Button == MouseButtons.Right)
+            {
+                for(int i = 0; i < tabControl1.TabCount; i++)
+                {
+                    Rectangle r = tabControl1.GetTabRect(i);
+                    if (r.Contains(e.Location))
+                    {
+                        RightClickMenuStrip.Show(this, new Point(e.X, e.Y));
+                        selectedTabPage = tabControl1.TabPages[i]; 
+                    }
+                }
+            }
         }
 
-        // prevent selecting
+        private void CloseTab_Click(object sender, EventArgs e)
+        {
+            selectedTabPage.Dispose(); 
+        }
+
+
+        // prevent selecting of add tab page
         private void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
         {
             if(e.TabPageIndex == this.tabControl1.TabCount - 1)
@@ -156,36 +154,48 @@ namespace WebBrowser.UI
             }
         }
 
-        //**************************** Adds X to tab ********************************
+        /**
+         * Creates a new tab at the second to last index
+         */
+        public void CreateNewTab()
+        {
+            var lastIndex = this.tabControl1.TabCount - 1;
+            TabPage newTabPage = new TabPage();
+            newTabPage.Text = "New Tab";
+            TabUserControl newUserControl = new TabUserControl(newTabPage);
+            newUserControl.Dock = DockStyle.Fill;
+            newUserControl.BackgroundImage = Properties.Resources.Keyz_Logo;
+            newUserControl.BackgroundImageLayout = ImageLayout.Zoom;
+
+            newTabPage.Controls.Add(newUserControl);
+            tabControl1.TabPages.Insert(lastIndex, newTabPage);
+            this.tabControl1.SelectedIndex = lastIndex;
+        }
+
+
+
         private void tabControl1_DrawItem(object sender, DrawItemEventArgs e)
         {
-/*            e.Graphics.DrawString("x", e.Font, Brushes.Black, e.Bounds.Right - 15, e.Bounds.Top + 4);
-            e.Graphics.DrawString(this.tabControl1.TabPages[e.Index].Text, e.Font, Brushes.Black,
-                e.Bounds.Left + 12, e.Bounds.Top + 4);
-            e.DrawFocusRectangle();
-*/        }
+        }
 
         private void BrowserForm_MouseDown(object sender, MouseEventArgs e)
         {
-            /*            for (int i = 0; i < this.tabControl1.TabPages.Count; i++)
-                        {
-                            Rectangle r = tabControl1.GetTabRect(i);
-                            //Getting the position of the "x" mark.
-                            Rectangle closeButton = new Rectangle(r.Right - 15, r.Top + 4, 9, 7);
-                            if (closeButton.Contains(e.Location))
-                            {
-                                if (MessageBox.Show("Would you like to Close this Tab?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
-                                {
-                                    this.tabControl1.TabPages.RemoveAt(i);
-                                    break;
+        }
 
+        private void addTabPage_Click(object sender, EventArgs e)
+        {
+        }
 
-                        tabControl1.SelectedTab.Text = this.tabUserControl1.webBrowserTitle; 
+        private void printPageToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+        }
+        public void tabUserControl1_Load(object sender, EventArgs e)
+        {
+        }
 
-                                }
-                            }
-                        }
-            */
+        private void RightClickMenuStrip_Opening(object sender, CancelEventArgs e)
+        {
+
         }
     }
 }

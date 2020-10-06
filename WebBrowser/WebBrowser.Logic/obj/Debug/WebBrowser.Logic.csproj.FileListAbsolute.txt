@@ -70,3 +70,15 @@ D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug
 D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.csproj.CopyComplete
 D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.dll
 D:\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.pdb
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\BrowserDatabase.mdf
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\BrowserDatabase_log.ldf
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Logic.dll
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Logic.pdb
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Data.dll
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Data.pdb
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\bin\Debug\WebBrowser.Data.dll.config
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.csprojAssemblyReference.cache
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.csproj.CoreCompileInputs.cache
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.csproj.CopyComplete
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.dll
+C:\Users\Colin\Desktop\Software Construction\WebBrowserProject\WebBrowser\WebBrowser.Logic\obj\Debug\WebBrowser.Logic.pdb
