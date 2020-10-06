@@ -144,7 +144,6 @@ namespace WebBrowser.UI
             selectedTabPage.Dispose(); 
         }
 
-
         // prevent selecting of add tab page
         private void tabControl1_Selecting(object sender, TabControlCancelEventArgs e)
         {
@@ -197,5 +196,6 @@ namespace WebBrowser.UI
         {
 
         }
+
     }
 }

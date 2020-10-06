@@ -47,7 +47,6 @@
             this.addTabPage = new System.Windows.Forms.TabPage();
             this.RightClickMenuStrip = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.CloseTab = new System.Windows.Forms.ToolStripMenuItem();
-            this.bookmarkTabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.RightClickMenuStrip.SuspendLayout();
@@ -157,7 +156,7 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(164, 34);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -196,10 +195,9 @@
             // 
             this.RightClickMenuStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.RightClickMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.CloseTab,
-            this.bookmarkTabToolStripMenuItem});
+            this.CloseTab});
             this.RightClickMenuStrip.Name = "RightClickMenuStrip";
-            this.RightClickMenuStrip.Size = new System.Drawing.Size(241, 101);
+            this.RightClickMenuStrip.Size = new System.Drawing.Size(241, 69);
             this.RightClickMenuStrip.Opening += new System.ComponentModel.CancelEventHandler(this.RightClickMenuStrip_Opening);
             // 
             // CloseTab
@@ -208,12 +206,6 @@
             this.CloseTab.Size = new System.Drawing.Size(240, 32);
             this.CloseTab.Text = "Close Tab";
             this.CloseTab.Click += new System.EventHandler(this.CloseTab_Click);
-            // 
-            // bookmarkTabToolStripMenuItem
-            // 
-            this.bookmarkTabToolStripMenuItem.Name = "bookmarkTabToolStripMenuItem";
-            this.bookmarkTabToolStripMenuItem.Size = new System.Drawing.Size(240, 32);
-            this.bookmarkTabToolStripMenuItem.Text = "Bookmark Tab";
             // 
             // BrowserForm
             // 
@@ -259,7 +251,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.ContextMenuStrip RightClickMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem CloseTab;
-        private System.Windows.Forms.ToolStripMenuItem bookmarkTabToolStripMenuItem;
     }
 }
 
